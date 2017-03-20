@@ -2,11 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import './index.css';
+import data from './countries.js';
 
-const countriesFile ='./countries.js'
 
 
-ReactDOM.render(
-  <App />,
+ReactDOM.render (
+  <App data={data}/>,
   document.getElementById('root')
 );
