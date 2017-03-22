@@ -21,7 +21,7 @@ class App extends Component {
     const countriesList = data.map((erkir, idx)=>{
       //console.log(search)
       if(erkir.name.toLowerCase().includes(search)) {
-        return <div className='list' key={idx}> {erkir.name} </div>
+        return <div className='erkir' key={idx}> {erkir.name} </div>
    }
     });
 
