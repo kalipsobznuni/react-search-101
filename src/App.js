@@ -41,11 +41,3 @@ class App extends Component {
 }
 
 export default App;
-
-/*
-const countriesList= data.filter(
-  (country)=>{
-    return data.name.indexOf(this.state.search) !== -1;
-  }
-)
-*/
