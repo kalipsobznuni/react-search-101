@@ -29,7 +29,7 @@ class App extends Component {
       <div className="App">
         <div className='filtered'>
           <div>
-          <h1> Filtered Lists </h1>
+          <h1> What Country? </h1>
             <input type="text"
               className="search"
               placeholder="Filter..."
