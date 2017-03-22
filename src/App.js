@@ -9,10 +9,6 @@ class App extends Component {
     }
   }
 
-    changeSearch = (e) => {
-      const search = e.currentTarget.value.toLowerCase();
-      this.setState({ search });
-    }
 
   render() {
 
@@ -20,7 +16,7 @@ class App extends Component {
     const {search} = this.state;
     const countriesList = data.map((erkir, idx)=>{
       //console.log(search)
-      if(erkir.name.toLowerCase().includes(search)) {
+      if(erkir.name.toLowerCase().includes(search.toLowerCase())) {
         return <div className='erkir' key={idx}> {erkir.name} </div>
    }
     });
@@ -29,7 +25,7 @@ class App extends Component {
       <div className="App">
         <div className='filtered'>
           <div>
-          <h1> What Country? </h1>
+          <h1> Filtered List </h1>
             <input type="text"
               className="search"
               placeholder="Filter..."
